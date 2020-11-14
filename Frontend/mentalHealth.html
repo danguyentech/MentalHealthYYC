@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mentalHealth.css">
+    <script src='mentalHealth.js'></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class='ml-5'>Assessment</h1>
+    <hr>
+    <h2 class='container text-center mb-5'>The following asks about various kinds of worries that you might have experienced over the past seven days. In the following statements, we refer to COVID-19 as "the virus".</h2>
+    <div class='container d-flex flex-column align-items-center fade-in-bottom' id='question'>
+        <h3 class='container mb-4 text-center' id='questionText'>I am worried about catching the virus</h3>
+        <input class="btn btn-primary my-2 w-50" type="button" value="Not at all" onclick="nextQuestion(0)">
+        <input class="btn btn-primary my-2 w-50" type="button" value='Slightly' onclick="nextQuestion(1)">
+        <input class="btn btn-primary my-2 w-50" type="button" value='Moderately ' onclick="nextQuestion(2)">
+        <input class="btn btn-primary my-2 w-50" type="button" value='Very' onclick="nextQuestion(3)">
+        <input class="btn btn-primary my-2 w-50" type="button" value='Extremely' onclick="nextQuestion(4)">
+    </div>
+</body>
