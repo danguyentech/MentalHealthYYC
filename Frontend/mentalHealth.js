@@ -31,7 +31,7 @@ function nextQuestion(answerValue){
     overallStress += answerValue;
     questionValue++;
     question.style.animation= 'fade-out-bottom 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both';  
-    setTimeout(next, 100)
+    setTimeout(next, 100) 
     function next(){
         document.getElementById('questionText').textContent= questions[questionValue-1];
         question.style.animation= 'fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both'
