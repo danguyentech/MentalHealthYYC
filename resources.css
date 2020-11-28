@@ -5,7 +5,7 @@
     align-items: center;
     flex-wrap: wrap;
 }
-button {
+.mainButton {
     flex: 1;
     padding: 50px 75px;
     margin: 50px;
@@ -22,14 +22,12 @@ button {
     user-select: none;
     background: transparent;
    /* background-image: url(mentalHealth3.png);*/
-   background-image: url(flower-img.jpg);
-    background-repeat: round;
     /*background-position: 0 -100%;
     transition: 1.5s ease;*/
 }
-button:hover{
+/* button:hover{
     background-position: 100% 200%;
-}
+} */
 /*   button:nth-child(1){
     filter: hue-rotate(20deg);
 }
@@ -48,5 +46,16 @@ button:nth-child(5){
     top: 0;
     margin: 20px;
     width: 100%;
+    text-align: center;
+}
+.backButton{
+    height: 100px;
+    width: 300px;
+    border-radius: 75px;
+    border: 5px solid #284cff;
+    font-size: 25px;
+    
+}
+.content{
     text-align: center;
 }

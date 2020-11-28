@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+    <link rel='stylesheet' href='../style.css'>
+    <link rel='stylesheet' href='../utilities.css'>
+    <link rel='stylesheet' href='../resources.css'>
+    <!--   <style>
+            P {
+                font-size: 20px;
+                font-weight: 100;
+                color: darkblue;
+                text-align: center;
+            }
+            h2 {
+                font-size: 40px;
+                font-weight: bolder;
+                color: darkseagreen;
+                text-align: center;
+            }
+            h1{
+                font-size: 80px;
+                font-weight: bolder;
+                color: lightcoral;
+                text-align: center;
+            }
+        </style> -->
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">MentalHealthYYC</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../Resources.html">Resources</a></li>
+                    <li><a href="../Assessment.html">Assessment</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class='content'>
+        <h1> Audio </h1>
+        <div>
+            <h2>Affirmation Pod</h2>
+            <p>A podcast meant to help people accept themsleves through self affirmation and positivity</p>
+            <a href="https://www.affirmationpod.com/" target="_blank"> Visit Affirmation Pod Web Site</a>
+        </div>
+        <div>
+            <h2> Train the Mind </h2>
+            <p>A daily podcast about mental wellness</p>
+
+            <a href="https://open.spotify.com/show/5ulnZFwoLkEv566YCZwTvY/" target="_blank"> Visit Train The Mind
+                Website</a>
+        </div>
+        <div>
+            <h2>Coffitivity </h2>
+            <p>A website that plays coffee shop sounds to help with focus</p>
+            <a href="https://coffitivity.com/" target="_blank"> Visit Coffitivity Web Site</a>
+        </div>
+        <div>
+            <button onclick="goback()" class='backButton'> Return to Main
+                Page</button>
+        </div>
+    </div>
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <h1>EvolveU - Project 2
+                </h1>
+                <div>Copyright &copy; 2020</div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="docs.html">Docs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script>
+        /* function goback() {
+            Window.history.goback("resources.html");
+        }*/
+        function goback() {
+            window.location = "../Resources.html"
+        }
+    </script>
+</body>
+
+</html>

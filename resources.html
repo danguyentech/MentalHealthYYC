@@ -1,53 +1,58 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Resources</title>
-        <link rel='stylesheet' href='resources.css'>
-        <link rel='stylesheet' href='style.css'>
-        <link rel='stylesheet' href='utilities.css'>
-        <script>
-            function goto(target){
-                window.location=target
-            } 
-        </script>
-    </head>
-    <body>
-        <div class="navbar">
-            <div class="container flex">
-                <h1 class="logo">MentalHealthYYC.</h1>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="resources.html">Resources</a></li>
-                        <li><a href="questionnaire.html">Questionnaire</a></li>
-                    </ul>
-                </nav>
-            </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources</title>
+    <link rel='stylesheet' href='resources.css'>
+    <link rel='stylesheet' href='style.css'>
+    <link rel='stylesheet' href='utilities.css'>
+    <script>
+        function goto(target) {
+            window.location = target
+        } 
+    </script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">MentalHealthYYC.</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Resources.html">Resources</a></li>
+                    <li><a href="Assessment.html">Assessment</a></li>
+                </ul>
+            </nav>
         </div>
-        <h1 class="sticky"> <u>Mental Health Awareness Resources </u></h1>
-        <div class="wrapper">
-            <button onclick="goto('Audio1.html')">Audio</button>
-            <button onclick="goto('Video1.html')"> Video</button>
-            <button onclick="goto('PhoneNumbers1.html')"> Phone-Numbers</button>
-            <button onclick="goto('Websites1.html')"> Websites</button>
-            <button onclick="goto('Written1.html')"> Written</button>
-            <button onclick="goto('Miscellanous1.html')"> Miscellanous</button>
-        </div>
-        <footer class="footer bg-dark py-5">
-            <div class="container grid grid-3">
-                <div>
-                    <h1>EvolveU - Project 2
-                    </h1>
-                    <div>Copyright &copy; 2020</div>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="features.html">Features</a></li>
-                        <li><a href="docs.html">Docs</a></li>
-                    </ul>
-                </nav>
+    </div>
+    <h1 class="sticky"> <u>Mental Health Awareness Resources </u></h1>
+    <div class="wrapper">
+        <button class='mainButton' onclick="goto('Resources/Audio.html')">Audio</button>
+        <button class='mainButton' onclick="goto('Resources/Video.html')"> Video</button>
+        <button class='mainButton' onclick="goto('Resources/Phone.html')"> Phone</button>
+        <button class='mainButton' onclick="goto('Resources/Websites.html')"> Websites</button>
+        <button class='mainButton' onclick="goto('Resources/Written.html')"> Written</button>
+        <button class='mainButton' onclick="goto('Resources/Miscellaneous.html')"> Miscellaneous</button>
+    </div>
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <h1>EvolveU - Project 2
+                </h1>
+                <div>Copyright &copy; 2020</div>
             </div>
-        </footer>
-    </body>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="docs.html">Docs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+
 </html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Written</title>
+    <link rel='stylesheet' href='../style.css'>
+    <link rel='stylesheet' href='../utilities.css'>
+    <link rel='stylesheet' href='../resources.css'>
+    <!-- <style>
+            P {
+                font-size: 20px;
+                font-weight: 100;
+                color: darkblue;
+                text-align: center;
+            }
+            h2 {
+                font-size: 40px;
+                font-weight: bolder;
+                color: darkseagreen;
+                text-align: center;
+            }
+            h1{
+                font-size: 80px;
+                font-weight: bolder;
+                color: lightcoral;
+                text-align: center;
+            }
+        </style> -->
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">MentalHealthYYC</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../Resources.html">Resources</a></li>
+                    <li><a href="../Assessment.html">Assessment</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class='content'>
+        <h1> Written </h1>
+        <div>
+            <h2>Stress.org Blog</h2>
+            <p>A series of blogposts about stress and stress management
+            </p>
+            <a href="https://www.stress.org/blog/" target="_blank"> Visit Stress.org Blog</a>
+        </div>
+        <div>
+            <h2> CMHA blog </h2>
+            <p>
+                Balance is CMHA Calgary mental health blog, which aims to raise awareness, provide hope, build community
+                and promote mental wellness through personal stories, mental health tips and information, expert
+                opinions and community insights.
+            </p>
+            <a href="https://cmha.calgary.ab.ca/balance-blog/" target="_blank"> Visit CMHA blog</a>
+        </div>
+        <div>
+            <button onclick="goback()" class='backButton'> Return to Main Page</button>
+        </div>
+    </div>
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <h1>EvolveU - Project 2
+                </h1>
+                <div>Copyright &copy; 2020</div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="docs.html">Docs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script>
+        /* function goback() {
+            Window.history.goback("resources.html");
+        }*/
+        function goback() {
+            window.location = "../Resources.html"
+        }
+    </script>
+</body>
+
+</html>
