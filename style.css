@@ -239,14 +239,3 @@
   .p-5 {
     padding: 4rem;
   }
-
-  .answer{
-      margin-top: 1em;
-      margin-bottom: 1em;
-  }
-
-.question{
-  font-size: 23px; 
-  color: darkblue;
-  background-color: lightyellow;
-}

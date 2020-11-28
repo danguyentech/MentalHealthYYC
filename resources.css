@@ -1,0 +1,52 @@
+.wrapper{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+button {
+    flex: 1;
+    padding: 50px 75px;
+    margin: 50px;
+    height: 300px;
+    width: 700px;
+    border-radius: 75px;
+    border: 5px solid #284cff;
+    font-family: 'VT323', monospace;
+    font-size: 50px;
+    text-shadow: 0 3px 5px rgba(0,0,0,0.25);
+    white-space: nowrap;
+    color: darkblue;
+    cursor: pointer;
+    user-select: none;
+    background: transparent;
+   /* background-image: url(mentalHealth3.png);*/
+   background-image: url(flower-img.jpg);
+    background-repeat: round;
+    /*background-position: 0 -100%;
+    transition: 1.5s ease;*/
+}
+button:hover{
+    background-position: 100% 200%;
+}
+/*   button:nth-child(1){
+    filter: hue-rotate(20deg);
+}
+button:nth-child(2){
+    filter: hue-rotate(40deg);
+}
+button:nth-child(3){
+    filter: hue-rotate(60deg);
+}
+button:nth-child(4){
+    filter: hue-rotate(80deg);
+}
+button:nth-child(5){
+    filter: hue-rotate(100deg);*/
+.sticky {
+    top: 0;
+    margin: 20px;
+    width: 100%;
+    text-align: center;
+}
