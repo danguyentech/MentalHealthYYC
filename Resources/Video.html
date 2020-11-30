@@ -8,6 +8,7 @@
     <link rel='stylesheet' href='../style.css'>
     <link rel='stylesheet' href='../utilities.css'>
     <link rel='stylesheet' href='../resources.css'>
+    <script src='resources.js'></script>
 
     <!--  <style>
         P {
@@ -33,7 +34,7 @@
     </style> -->
 </head>
 
-<body>
+<body onLoad='fetchResource(1)'>
     <div class="navbar">
         <div class="container flex">
             <h1 class="logo">MentalHealthYYC.</h1>
@@ -46,45 +47,12 @@
             </nav>
         </div>
     </div>
-    <div class='content'>
+    <div class='content' id='resources'>
         <h1> Video </h1>
-        <div>
-            <h2> A Ten Minute Guided Meditation to Clear Your Mind </h2>
-            <p>
-                This 10 minute guided meditation is an effective way to eliminate overthinking by clearing your mind,
-                allowing yourself to relax and get settled into the moment.
-            </p>
-            <a href="https://www.youtube.com/watch?v=ez3GgRqhNvA/" target="_blank"> A Ten Minute Guided Meditation to
-                Clear Your Mind</a>
-        </div>
-        <div>
-            <h2>10-Minute Yoga For Self Care - Yoga With Adriene</h2>
-            <p>
-                10 min Yoga For Self Care invites you to take 10 min of your day to practice self care and love of self.
-                We
-                spend a lot of time on our phones, computers, in traffic, working, and taking care of others. Take TEN
-                to
-                tend to your mind and body with this practice that combines yoga asana, breath, and massage.
-            </p>
-            <a href="https://youtu.be/VpW33Celubg?list=PLui6Eyny-UzwiUzvhM2BjxThodiRWZ2JR/" target="_blank"> 10-Minute
-                Yoga For Self Care - Yoga With Adriene</a>
-        </div>
-        <div>
-            <h2>The gift and power of emotional courage TedTalk</h2>
-            <p>
-                Psychologist Susan David shares how the way we deal with our emotions shapes everything that matters:
-                our
-                actions, careers, relationships, health and happiness. In this deeply moving, humorous and potentially
-                life-changing talk, she challenges a culture that prizes positivity over emotional truth and discusses
-                the
-                powerful strategies of emotional agility. A talk to share. </p>
-            <a href="https://www.ted.com/talks/susan_david_the_gift_and_power_of_emotional_courage?referrer=playlist-how_to_practice_emotional_first_aid/"
-                target="_blank"> The gift and power of emotional courage TedTalk</a>
-        </div>
-        <div>
-            <button onclick="goback()" class='backButton'> Return to Main
-                Page</button>
-        </div>
+    </div>
+    <div class='content'>
+        <button onclick="goback()" class='backButton'> Return to Main
+            Page</button>
     </div>
     <footer class="footer bg-dark py-5">
         <div class="container grid grid-3">
@@ -102,15 +70,6 @@
             </nav>
         </div>
     </footer>
-    <script>
-        /* function goback() {
-            Window.history.goback("resources.html");
-
-        }*/
-        function goback() {
-            window.location = "../Resources.html"
-        }
-    </script>
 </body>
 
 </html>

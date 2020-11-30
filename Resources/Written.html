@@ -8,6 +8,7 @@
     <link rel='stylesheet' href='../style.css'>
     <link rel='stylesheet' href='../utilities.css'>
     <link rel='stylesheet' href='../resources.css'>
+    <script src='resources.js'></script>
     <!-- <style>
             P {
                 font-size: 20px;
@@ -30,7 +31,7 @@
         </style> -->
 </head>
 
-<body>
+<body onLoad='fetchResource(4)'>
     <div class="navbar">
         <div class="container flex">
             <h1 class="logo">MentalHealthYYC</h1>
@@ -43,26 +44,11 @@
             </nav>
         </div>
     </div>
-    <div class='content'>
+    <div class='content' id='resources'>
         <h1> Written </h1>
-        <div>
-            <h2>Stress.org Blog</h2>
-            <p>A series of blogposts about stress and stress management
-            </p>
-            <a href="https://www.stress.org/blog/" target="_blank"> Visit Stress.org Blog</a>
-        </div>
-        <div>
-            <h2> CMHA blog </h2>
-            <p>
-                Balance is CMHA Calgary mental health blog, which aims to raise awareness, provide hope, build community
-                and promote mental wellness through personal stories, mental health tips and information, expert
-                opinions and community insights.
-            </p>
-            <a href="https://cmha.calgary.ab.ca/balance-blog/" target="_blank"> Visit CMHA blog</a>
-        </div>
-        <div>
-            <button onclick="goback()" class='backButton'> Return to Main Page</button>
-        </div>
+    </div>
+    <div class='content'>
+        <button onclick="goback()" class='backButton'> Return to Main Page</button>
     </div>
     <footer class="footer bg-dark py-5">
         <div class="container grid grid-3">
@@ -80,14 +66,6 @@
             </nav>
         </div>
     </footer>
-    <script>
-        /* function goback() {
-            Window.history.goback("resources.html");
-        }*/
-        function goback() {
-            window.location = "../Resources.html"
-        }
-    </script>
 </body>
 
 </html>

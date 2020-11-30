@@ -8,6 +8,7 @@
     <link rel='stylesheet' href='../style.css'>
     <link rel='stylesheet' href='../utilities.css'>
     <link rel='stylesheet' href='../resources.css'>
+    <script src='resources.js'></script>
     <!-- <style>
             P {
                 font-size: 20px;
@@ -30,7 +31,7 @@
         </style>  -->
 </head>
 
-<body>
+<body onLoad='fetchResource(5)'>
     <div class="navbar">
         <div class="container flex">
             <h1 class="logo">MentalHealthYYC</h1>
@@ -43,56 +44,29 @@
             </nav>
         </div>
     </div>
-    <div class='content'>
+    <div class='content' id='resources'>
         <h1>Miscellaneous</h1>
-        <div>
-            <h2> Superbetter </h2>
-            <p>A website meant to gameify mental health.</p>
-            <a href="https://www.superbetter.com/" target="_blank"> Visit Superbetter website</a>
-        </div>
-        <div>
-            <h2>Checkpoint's List of Games for wellbeing</h2>
-            <p>
-                A collection of games voted by people that have helped them with their mental wellbeing.
-            </p>
-            <a href="https://checkpointorg.com/games-for-health/" target="_blank"> Visit Checkpoint's List of Games
-                for wellbeing website</a>
-        </div>
-        <div>
-            <h2>University of Calgary Mindfulness Online </h2>
-            <p>University of Calgary's self directed mentla wellness program</p>
-            <a href="https://www.ucalgary.ca/wellness-services/staying-healthy/learning/self-help-resources/mindfulness-online/"
-            target="_blank"> Visit University of Calgary Mindfulness Online</a>
-        </div>
-        <div>
-            <button onclick="goback()" class='backButton'> Return to Main
-                Page</button>
-        </div>
-        <footer class="footer bg-dark py-5">
-            <div class="container grid grid-3">
-                <div>
-                    <h1>EvolveU - Project 2
-                    </h1>
-                    <div>Copyright &copy; 2020</div>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="features.html">Features</a></li>
-                        <li><a href="docs.html">Docs</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </footer>
     </div>
-    <script>
-        /* function goback() {
-            Window.history.goback("resources.html");
-        }*/
-        function goback() {
-            window.location = "../Resources.html"
-        }
-    </script>
+    <div class='content'>
+        <button onclick="goback()" class='backButton'> Return to Main
+            Page</button>
+    </div>
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <h1>EvolveU - Project 2
+                </h1>
+                <div>Copyright &copy; 2020</div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="docs.html">Docs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
 </body>
 
 </html>

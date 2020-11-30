@@ -8,6 +8,7 @@
     <link rel='stylesheet' href='../style.css'>
     <link rel='stylesheet' href='../utilities.css'>
     <link rel='stylesheet' href='../resources.css'>
+    <script src='resources.js'></script>
     <!--   <style>
             P {
                 font-size: 20px;
@@ -30,7 +31,7 @@
         </style> -->
 </head>
 
-<body>
+<body onLoad='fetchResource(0)'>
     <div class="navbar">
         <div class="container flex">
             <h1 class="logo">MentalHealthYYC</h1>
@@ -43,29 +44,12 @@
             </nav>
         </div>
     </div>
-    <div class='content'>
+    <div class='content' id='resources'>
         <h1> Audio </h1>
-        <div>
-            <h2>Affirmation Pod</h2>
-            <p>A podcast meant to help people accept themsleves through self affirmation and positivity</p>
-            <a href="https://www.affirmationpod.com/" target="_blank"> Visit Affirmation Pod Web Site</a>
-        </div>
-        <div>
-            <h2> Train the Mind </h2>
-            <p>A daily podcast about mental wellness</p>
-
-            <a href="https://open.spotify.com/show/5ulnZFwoLkEv566YCZwTvY/" target="_blank"> Visit Train The Mind
-                Website</a>
-        </div>
-        <div>
-            <h2>Coffitivity </h2>
-            <p>A website that plays coffee shop sounds to help with focus</p>
-            <a href="https://coffitivity.com/" target="_blank"> Visit Coffitivity Web Site</a>
-        </div>
-        <div>
-            <button onclick="goback()" class='backButton'> Return to Main
-                Page</button>
-        </div>
+    </div>
+    <div class='content'>
+        <button onclick="goback()" class='backButton'> Return to Main
+            Page</button>
     </div>
     <footer class="footer bg-dark py-5">
         <div class="container grid grid-3">
@@ -83,14 +67,6 @@
             </nav>
         </div>
     </footer>
-    <script>
-        /* function goback() {
-            Window.history.goback("resources.html");
-        }*/
-        function goback() {
-            window.location = "../Resources.html"
-        }
-    </script>
 </body>
 
 </html>
