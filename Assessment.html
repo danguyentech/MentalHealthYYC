@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="Assessment.css">
     <link rel="stylesheet" href="utilities.css">
     <link rel="stylesheet" href="style.css">
+    <script src='Assessment.js'></script>
+    <script src="https://kit.fontawesome.com/e9d9c506c6.js" crossorigin="anonymous"></script>
     <title> COVID Stress Scales</title>
 </head>
 <!-- height: 3700;background-color: lightblue;padding: 10px; align-self: center; margin: 0 auto; "-->
@@ -14,7 +16,7 @@
 <body>
     <div class="navbar">
         <div class="container flex">
-            <h1 class="logo">MentalHealthYYC.</h1>
+            <h1 class="logo">MentalHealthYYC</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -24,9 +26,9 @@
             </nav>
         </div>
     </div>
-    <div style='width:70%;' class='ml-5 flex'>
+    <div id='questions' style='width:70%;' class='ml-5 flex'>
         <form name="frmEntry" id="frmEntry">
-            <div>
+            <div id='firstSet'>
                 <div class='question'>
                     <label for quest="quest"><strong><u>
                                 COVID Stress Scales:
@@ -390,9 +392,27 @@
                 <input type="radio" name="Qest36" id="rd10" value="4" /> Almost always
             </div>
             <!--  <input type="button" onclick="myFunction()" id="btn" value="show selected value"> -->
-            <button style=" font-size: larger; color: darkcyan; background-color: lightyellow;" onclick="myFunction()">
-                Show selected results </button>
+            <div style=" font-size: larger; color: darkcyan; background-color: lightyellow;" onclick="myFunction()">
+                Show selected results </div>
         </form>
+    </div>
+    <div class="row results" id="results">
+        <div id="sub-chart" class="sub-chart">
+            <div id="indicator" class="line" style="left: 57.9433%;">
+                <i class="fas fa-caret-up" id='arrow'></i>
+            </div>
+            <div id='subtitles' class="assessment-graph-labels">
+                <div>Lower</div>
+                <div>Average</div>
+                <div>Higher</div>
+            </div>
+        </div> 
+        <div id='recommendDiv'>
+            <p class='text-center'>Your stress seems to be at a <span id='colorText'></span> level.</p>
+            <p class='text-center'>We recommend:</p>
+            <div id='resource1'></div>
+            <div id='resource2'></div>
+        </div>
     </div>
     <footer class="footer bg-dark py-5">
         <div class="container grid grid-3">
@@ -410,19 +430,6 @@
             </nav>
         </div>
     </footer>
-    <script>
-        function myFunction() {
-            var tot = 0;
-            var x = document.getElementsByTagName("input");
-            for (i = 0; i < x.length - 1; i++) {
-                if (x[i].checked) {
-                    tot += parseInt(x[i].value);
-                }
-                console.log(x[i].value);
-            }
-            alert("Your Score is " + tot);
-        }
-    </script>
 </body>
 
 </html>

@@ -2,9 +2,58 @@
     margin-top: 1em;
     margin-bottom: 1em;
 }
-
 .question{
 font-size: 23px; 
 color: darkblue;
 background-color: lightyellow;
+}
+#results{
+  display: none;
+  margin-top: 5em;
+  margin-bottom: 3em;
+}
+#sub-chart{
+  background: linear-gradient(to right, 
+    rgb(109, 171, 241) 0%, 
+    rgb(109, 171, 241) 2.64025%, 
+    rgb(126, 178, 77) 2.93361%,
+    rgb(126, 178, 77) 3.22698%, 
+    rgb(126, 178, 77) 12.01%, 
+    rgb(255, 239, 54) 13.0184%,
+    rgb(255, 239, 54) 14.0269%, 
+    rgb(255, 239, 54) 36.1652%, 
+    rgb(233, 139, 58) 38.7371%, 
+    rgb(233, 139, 58) 41.3089%, 
+    rgb(233, 139, 58) 79.4512%, 
+    rgb(214, 38, 49) 83.975%,
+    rgb(214, 38, 49) 88.4988%, 
+    rgb(214, 38, 49) 100%);
+  width: 75%;
+  height: 3em;
+  margin-left: auto;
+  margin-right: auto;
+}
+#indicator{
+  background: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  }
+#arrow{
+  transform: scale(2,2) translate(0, 140%);
+  color: black;
+  background:none;
+  }
+#subtitles{
+  display: flex;
+  font-weight: bold;
+  flex-direction: row;
+  justify-content: space-between;
+  transform: translate(0, 160%);
+}
+.footer{
+  margin-top: 2em;
+}
+#recommendDiv{
+  margin-top: 2em;
 }

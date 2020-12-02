@@ -105,7 +105,7 @@ pre {
 }
 
 .showcase-text {
-  animation: slideInFromLeft 1s ease-in;
+  animation: slideInFromLeft 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both ;
 }
 
 .showcase-form {
@@ -116,7 +116,7 @@ pre {
   padding: 40px;
   z-index: 100;
   justify-self: flex-end;
-  animation: slideInFromRight 1s ease-in;
+  animation: slideInFromRight 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both ;
 }
 
 .showcase-form .form-control {
@@ -154,7 +154,7 @@ pre {
 /* Stats */
 .stats {
   padding-top: 100px;
-  animation: slideInFromBottom 1s ease-in;
+  animation: slideInFromBottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 .stats-heading {
@@ -254,40 +254,48 @@ pre {
 /* Animations */
 @keyframes slideInFromLeft {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(-100px);
+    opacity:0;
   }
 
   100% {
     transform: translateX(0);
+    opacity:1;
   }
 }
 
 @keyframes slideInFromRight {
   0% {
-    transform: translateX(100%);
+    transform: translateX(100px);
+    opacity:0;
   }
 
   100% {
     transform: translateX(0);
+    opacity:1;
   }
 }
 
 @keyframes slideInFromTop {
   0% {
-    transform: translateY(-100%);
+    transform: translateY(-100px);
+    opacity:0;
   }
 
   100% {
     transform: translateX(0);
+    opacity:1;
   }
 }
 
 @keyframes slideInFromBottom {
   0% {
-    transform: translateY(100%);
+    transform: translateY(100px);
+    opacity:0;
   }
 
   100% {
     transform: translateX(0);
+    opacity:1;
   }
 }
