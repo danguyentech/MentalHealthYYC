@@ -146,7 +146,7 @@ const allResources=[
 ]
 
 let server = app.listen(8081, function () {
-        let port = server.address().port;
+        let port=process.env.PORT || 3000
         console.log('Server started on:' + port)
     })
     
