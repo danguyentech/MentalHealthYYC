@@ -3,6 +3,8 @@ const app = express()
 const cors = require('cors') 
 app.use(cors())
 app.use(express.json())
+const port=process.env.PORT || 3000;
+
 
 const audioResources = [
     {
@@ -145,10 +147,9 @@ const allResources=[
     extraResources
 ]
 
-let server = app.listen(8081, function () {
-        let port=process.env.PORT || 3000
-        console.log('Server started on:' + port)
-    })
+app.listen(port, function () {
+    console.log('Server started on:' + port)
+})
     
 app.get('/resources', function (req, res) {
     res.send(allResources);
